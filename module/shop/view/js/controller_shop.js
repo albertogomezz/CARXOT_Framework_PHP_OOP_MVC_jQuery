@@ -38,7 +38,7 @@ function ajaxForSearch(url,filter,items,total_items) {
                         )
                     }
                 mapBox_all(data);
-                // load_likes_user(); 
+                load_likes_user();
         }).catch(function() {
             $("#content_shop_cars").empty();
             $('<div></div>').appendTo('#content_shop_cars').html('<h1>No hay coches con estos filtros</h1>');
@@ -582,7 +582,6 @@ function add_cart(id_car){
 }
 
 $(document).ready(function() {
-    // console.log("dentro de shop");
     loadListCars();
     clicks();
     print_filters();

@@ -18,33 +18,32 @@
 		}
 
 		public function get_login_BLL($args) {
-			// return $args[1];
 
 			try {
 				$rdo = $this -> dao -> select_user($this -> db, $args[0]);
 
 				if (empty($rdo)) {
 					return "error_user";
-				} 
-				else {
-					// return 'existe el usuario';
-					if (password_verify($args[1], $rdo[0]['password'])) {
+				} else {
+					if ($rdo[0]['activate'] == 1){
+					// return 'este usuario esta verificado';
+						if (password_verify($args[1], $rdo[0]['password'])) {
 						$token= create_token($rdo[0]["username"]);
 						$_SESSION['username'] = $rdo[0]['username']; //Guardamos el usario 
 						$_SESSION['tiempo'] = time(); //Guardamos el tiempo que se logea
 						// return $_SESSION['username'];
-						echo json_encode($token);
-						exit;
+						return $token;
+						} else {
+							return "error_passwd";
+						}
 					} else {
-						echo json_encode("error_passwd");
-						exit;
+						return 'no verificado';
 					}
 				}
 			} catch (Exception $e) {
 				echo json_encode("error");
 				exit;
 			}
-			// return $this -> dao -> select_register_DAO($this -> db);
 		}
 
 		public function get_register_BLL($args) {

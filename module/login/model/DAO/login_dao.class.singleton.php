@@ -30,7 +30,7 @@
 
         function select_user($db, $username){
 
-			$sql = "SELECT `username`, `password`, `email`, `type_user`, `avatar` FROM `users` WHERE username='$username'";
+			$sql = "SELECT * FROM `users` WHERE username='$username'";
 
             $stmt = $db -> ejecutar($sql);
             return $db -> listar($stmt);

@@ -17,21 +17,19 @@ function login() {
                     document.getElementById('error_username_log').innerHTML = "El usario no existe,asegurase de que lo a escrito correctamente"
                 } else if (result == "error_passwd") {
                     document.getElementById('error_passwd_log').innerHTML = "La contraseña es incorrecta"
-                } else {
+                } else if (result == "no verificado"){
+                    toastr.warning("Verificación Necesaria");
+                }
+                else {
                     localStorage.setItem("token", result);
                     toastr.success("Loged succesfully");
-                    
-                    // if (id_coche) {
-                        // setTimeout(window.location.href = friendlyURL("?module=shop", 1000));
-                    // } else {
-                        setTimeout(window.location.href = friendlyURL("?module=shop", 1000));
-                    // }
                 }
             }).catch(function(textStatus) {
                 if (console && console.log) {
                     console.log("La solicitud ha fallado: " + textStatus);
                 }
             });
+            setTimeout(window.location.href = friendlyURL("?module=shop", 1000));
     }
 }
 

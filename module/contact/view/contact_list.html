@@ -1,0 +1,61 @@
+<br>
+<br>
+<div class="contact_container">
+	<form id="contact_form" method="post">
+		<h1>Contact</h1>
+		<div class="contact_page">
+			<div class="name_contact">
+				<label for="contact_name" class="label">Name: </label>
+				<br>
+				<input id="contact_name" name="contact_name" type="text" class="input">
+				<font color="red">
+					<br>
+					<span id="error_contact_name" class="error"></span>
+				</font>
+			</div>
+            <div class="email_contact">
+				<label for="contact_email" class="label">Email: </label>
+				<br>
+				<input id="contact_email" name="contact_email" type="text" class="input">
+				<font color="red">
+					<br>
+					<span id="error_contact_email" class="error"></span>
+				</font>
+			</div>
+			<div class="contact_matter">
+				<label for="matter" class="label">Matter: </label>
+				<br>
+				<select name="matter" id="matter">
+					<option selected>Seleccione un asunto</option>
+					<option>Problemas con la pagina</option>
+					<option>Mejoras para la pagina</option>
+					<option>Problemas con el registro</option>
+					<option>Contacto para una promoción</option>
+					<option>Otros</option>
+				</select>
+				<font color="red">
+					<br>
+					<span id="error_matter" class="error"></span>
+				</font>
+			</div>
+			<div class="contact_message">
+				<label for="message" class="label">Message: </label>
+				<br>
+				<textarea rows="4" cols="50" name="message" id="message"></textarea>
+				<font color="red">
+					<br>
+					<span id="error_message" class="error"></span>
+				</font>
+			</div>
+			<div class="button_contact">
+				<input type="button" class="button" name="send_contact" id="send_contact" value="Send">
+			</div>
+		</div>
+	</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

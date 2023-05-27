@@ -261,6 +261,8 @@ function send_new_password(token_email){
 
 $(document).ready(function() {
 
+    $(".forget_html").hide();
+
     click_login();
     button_login();
 });

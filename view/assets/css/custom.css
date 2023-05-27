@@ -653,3 +653,127 @@
     font-size: 15px;
     font-style: italic;
   }
+
+  /* Forget password */
+
+.forget_html {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.forget {
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #333;
+}
+
+.email_recover {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#email_forg {
+  text-align: center;
+  width: 200px;
+}
+
+#button_recover {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  font-weight: 600;
+  padding: 0.4em 0em 0.4em 0em;
+  width: 120px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 2px #333;
+  color: #333;
+  background-color: #fff;
+}
+
+#button_recover:hover {
+  background: rgb(192, 192, 192);
+}
+
+#error_email_forg { 
+  color: red;
+  font-family: arial;
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Recover password */
+
+.recover_html {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.recover {
+  display: block;
+  width: 300px;
+  height: 350px;
+  margin: auto;
+  text-align: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #333;
+}
+
+.password_recover, .password_recover_2 {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#pass_rec, #pass_rec_2 {
+  text-align: center;
+  width: 200px;
+}
+
+#button_set_pass {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif;
+  font-weight: 600;
+  padding: 0.4em 0em 0.4em 0em;
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 2px #333;
+  color: #333;
+  background-color: #fff;
+}
+
+#button_set_pass:hover {
+  background: rgb(192, 192, 192);
+}
+
+#error_password_rec, #error_password_rec_2 { 
+  color: red;
+  font-family: arial;
+  font-size: 15px;
+  font-style: italic;
+}

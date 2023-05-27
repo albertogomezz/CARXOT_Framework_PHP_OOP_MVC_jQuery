@@ -120,17 +120,13 @@ function load_content() {
 
     let path = window.location.pathname.split('/');
 
-    // console.log(path[5]);    
-
-    // if(path[5] === 'recover'){  
-    //     window.location.href = friendlyURL("?module=login&op=recover_view");
-    //     localStorage.setItem("token_email", path[6]);
-    // }
+    if(path[4] === 'recover'){
+        localStorage.setItem("token_email", path[5]);
+        load_form_new_password();
+    }
     if (path[4] === 'verify') {
-        // console.log("dentro de verify");
         ajaxPromise(friendlyURL('?module=login&op=verify_email'), 'POST', 'JSON', { "token_email": path[5]})
         .then(function(data) {
-            // console.log(data);
             if (data === 'actualizado'){
                 toastr.success("Correo Verificado");
             }
@@ -139,17 +135,9 @@ function load_content() {
             console.log('Error: verify email error');
         });
     }
-    // else if (path[4] === 'view') {
-    //     $(".login-wrap").show();
-    //     $(".forget_html").hide();
-    // }else if (path[4] === 'recover_view') {
-    //     load_form_new_password();
-    // }
 }
 
 $(document).ready(function() {
-    
-    // console.log("dentro de register");
     load_content();
     key_register();
     button_register();

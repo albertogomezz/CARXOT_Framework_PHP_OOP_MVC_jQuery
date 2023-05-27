@@ -20,7 +20,6 @@
                             <label for="pass" class="label">Password</label>
                             <input id="passwd_log" type="password" class="input" name="passwd_log">
                             <span id="error_passwd_log" class="error"></span>
-
                         </div>
                         <div class="group">
                             <input type="submit" id="login" class="button" value="Sign In">
@@ -29,6 +28,11 @@
                         <div class="foot-lnk">
                             <label for="tab-2">You don't have an account? </label>
                         </div>
+
+                        <div class="hr"></div>
+					    <div class="foot-lnk">
+						    <label id="forget_pass">Forgot Password?</label>
+					    </div>
                     </div>
                 </form>
 
@@ -68,4 +72,28 @@
         </div>
     </div>
 </body>
+
+<br><br>
+
+<div class="forget_html">
+	<form id="recover_email_form" method="post">
+		<h1>Recover Password</h1>
+		<div class="forget">
+			<div class="email_recover">
+				<label for="email_forg" class="label">Email Address: </label>
+				<br>
+				<input id="email_forg" name="email_forg" type="text" class="input" placeholder="example@gmail.com">
+				<font color="red">
+					<br>
+					<span id="error_email_forg" class="error"></span>
+				</font>
+			</div>
+			<div class="button_forget">
+				<input type="button" class="button" id="button_recover" value="Send email">
+			</div>
+		</div>
+	</form>
+</div>
+
+
 </html>

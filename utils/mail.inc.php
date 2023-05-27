@@ -21,12 +21,15 @@
                     $email['inputMatter'] = 'Pulsa para verificar tu correo';
                     $email['inputMessage'] = "<h2>Verificacion</h2><a href='http://localhost/CARXOT_Framework_PHP_OOP_MVC/login/view/verify/$email[token]'>Click here for verify your email.</a>";
                         break;
-                // case 'recover';
-                //     $email['fromEmail'] = 'secondchanceonti@gmail.com';
-                //     $email['inputEmail'] = 'secondchanceonti@gmail.com';
-                //     $email['inputMatter'] = 'Recover password';
-                //     $email['inputMessage'] = "<a href='http://localhost/Ejercicios/Framework_PHP_OO_MVC/module/login/recover/$email[token]'>Click here for recover your password.</a>";
-                //     break;
+
+                case 'recover';
+                
+                    $email['toEmail'] =  $email['toEmail'];
+                    $email['fromEmail'] = 'albertogomezalonso234@gmail.com';
+                    $email['inputEmail'] = 'albertogomezalonso234@gmail.com';
+                    $email['inputMatter'] = 'Recover password';
+                    $email['inputMessage'] = "<a href='http://localhost/CARXOT_Framework_PHP_OOP_MVC/login/recover_view/recover/$email[token]'>Click here for recover your password.</a>";
+                    break;
             }
             return self::send_mailgun($email);
         }

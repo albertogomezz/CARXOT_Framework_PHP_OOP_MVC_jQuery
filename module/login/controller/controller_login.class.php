@@ -6,6 +6,7 @@
         }
 
         function recover_view() {
+
             common::load_view('top_page_login.html', VIEW_PATH_LOGIN . 'recover_pass.html');
         }
 
@@ -53,6 +54,23 @@
         function refresh_cookie() {
             // echo json_encode("dentro de cookies");
             echo json_encode(common::load_model('login_model', 'get_refresh_cookie' ,));
+        }
+
+        // RECOVER PASSWD
+
+        function send_recover_email() {
+            // echo json_encode('dentro de recover email');
+            echo json_encode(common::load_model('login_model', 'get_send_recover_email', $_POST['correo']));
+        }
+
+        function verify_token() {
+            // echo json_encode('dentro de verify token');
+            echo json_encode(common::load_model('login_model', 'get_verify_token', $_POST['token_email']));
+        }
+
+        function new_password() {
+            // echo json_encode('dentro de new password');
+            echo json_encode(common::load_model('login_model', 'get_new_password', [$_POST['token_email'],$_POST['passwd']]));
         }
     }
 ?>

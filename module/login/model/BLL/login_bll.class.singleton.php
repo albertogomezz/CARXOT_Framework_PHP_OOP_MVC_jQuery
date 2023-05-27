@@ -24,19 +24,22 @@
 
 				if (empty($rdo)) {
 					return "error_user";
-				} else {
+				}
+				else {
 					if ($rdo[0]['activate'] == 1){
 					// return 'este usuario esta verificado';
 						if (password_verify($args[1], $rdo[0]['password'])) {
-						$token= create_token($rdo[0]["username"]);
-						$_SESSION['username'] = $rdo[0]['username']; //Guardamos el usario 
-						$_SESSION['tiempo'] = time(); //Guardamos el tiempo que se logea
-						// return $_SESSION['username'];
-						return $token;
-						} else {
+							$token= create_token($rdo[0]["username"]);
+							$_SESSION['username'] = $rdo[0]['username']; //Guardamos el usario 
+							$_SESSION['tiempo'] = time(); //Guardamos el tiempo que se logea
+							// return $_SESSION['username'];
+							return $token;
+						}
+						else {
 							return "error_passwd";
 						}
-					} else {
+					} 
+					else {
 						return 'no verificado';
 					}
 				}
@@ -82,7 +85,7 @@
 			// return $args;
 			unset($_SESSION['username']);
 			unset($_SESSION['tiempo']);
-			// session_destroy();
+			session_destroy();
 			
 			return 'done';
 		}
@@ -143,6 +146,48 @@
 		public function get_refresh_cookie_BLL() {
 			session_regenerate_id();
 			return 'refresh';
+		}
+
+		// RECOVER PASSWORD
+		
+		public function get_send_recover_email_BLL($args) {
+			// return $args;
+			$email_user = $this -> dao -> select_recover_password($this->db, $args);
+			// return $email_user;
+			$token = common::generate_Token_secure(20);
+
+			if (!empty($email_user)) {
+				$this -> dao -> update_recover_password($this->db, $args, $token);
+
+                $message = ['type' => 'recover', 
+                            'token' => $token, 
+                            'toEmail' => $args];
+				// return $message;
+				$email = mail::send_email($message);
+
+				if (!empty($email)) {
+					return;
+				}
+            }else{
+                return 'error';
+            }
+		}
+
+		public function get_verify_token_BLL($args) {
+
+			if($this -> dao -> select_verify_email($this->db, $args)){
+				return 'verify';
+			}
+			return 'fail';
+		}
+
+		public function get_new_password_BLL($args) {
+
+			$hashed_pass = password_hash($args[1], PASSWORD_DEFAULT, ['cost' => 12]);
+			if($this -> dao -> update_new_passwoord($this->db, $args[0], $hashed_pass)){
+				return 'done';
+			}
+			return 'fail';
 		}
 	}
 ?>

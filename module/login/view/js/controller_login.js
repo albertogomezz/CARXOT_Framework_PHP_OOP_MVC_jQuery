@@ -53,13 +53,15 @@ function click_login(){
         load_form_recover_password();
     }); 
 
-    // $('#google').on('click', function(e) {
-    //     social_login('google');
-    // }); 
+    $('#google').on('click', function(e) {
+        social_login('google');
+        // console.log("google");
+    }); 
 
-    // $('#github').on('click', function(e) {
-    //     social_login('github');
-    // }); 
+    $('#github').on('click', function(e) {
+        social_login('github');
+        // console.log("github");
+    }); 
 }
 
 function button_login() {
@@ -99,7 +101,6 @@ function validate_login() {
 
 
 //-------------- RECOVER PASS ----------------//
-
 
 //Cargar formulario para enviar email al correo
 function load_form_recover_password(){
@@ -256,6 +257,66 @@ function send_new_password(token_email){
         .catch(function() {
             console.log("Error: New password error");
         });   
+    }
+}
+
+ //------------------ SOCIAL LOGIN -----------------------//
+
+ function social_login(tipo){
+    authService = firebase_config();
+    authService.signInWithPopup(provider_config(tipo))
+    .then(function(result) {
+
+        console.log('Hemos autenticado al usuario ', result.user);
+
+        email_name = result.user.email;
+        let username = email_name.split('@');
+
+        social_user = {uid: result.user.uid, username: username[0], email: result.user.email, avatar: result.user.photoURL};
+
+        if (result) {
+            ajaxPromise(friendlyURL("?module=login&op=social_login"), 'POST', 'JSON', {"user":social_user})
+            .then(function(data) {
+                console.log(data);
+                localStorage.setItem("token", data);
+                toastr.options.timeOut = 3000;
+                toastr.success("Inicio de sesión realizado");
+            })
+            .catch(function() {
+                console.log('Error: Social login error');
+            });
+            setTimeout('window.location.href = friendlyURL("?module=shop")', 3000);
+        }
+    })
+    .catch(function(error) {
+        var errorCode = error.code;
+        console.log(errorCode);
+        var errorMessage = error.message;
+        console.log(errorMessage);
+        var email = error.email;
+        console.log(email);
+        var credential = error.credential;
+        console.log(credential);
+    });
+}
+
+function firebase_config(){
+
+    if(!firebase.apps.length){
+        firebase.initializeApp(config);
+    }else{
+        firebase.app();
+    }
+    return authService = firebase.auth();
+}
+
+function provider_config(param){
+    if(param === 'google'){
+        var provider = new firebase.auth.GoogleAuthProvider();
+        provider.addScope('email');
+        return provider;
+    }else if(param === 'github'){
+        return provider = new firebase.auth.GithubAuthProvider();
     }
 }
 

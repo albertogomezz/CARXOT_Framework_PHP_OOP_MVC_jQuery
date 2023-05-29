@@ -29,14 +29,14 @@
             echo json_encode(common::load_model('login_model', 'get_logout'));
         }
 
-        // VERIFY EMAIL
+        // ---------------- VERIFY EMAIL ---------------------
 
         function verify_email() {
             // echo json_encode($_POST['token_email']);
             echo json_encode(common::load_model('login_model', 'get_verify_email', $_POST['token_email']));
         }
 
-        // ACTIVITY USER
+        // ---------------  ACTIVITY USER ----------------------
 
         function activity() {
             echo json_encode(common::load_model('login_model', 'get_activity'));
@@ -53,10 +53,10 @@
 
         function refresh_cookie() {
             // echo json_encode("dentro de cookies");
-            echo json_encode(common::load_model('login_model', 'get_refresh_cookie' ,));
+            echo json_encode(common::load_model('login_model', 'get_refresh_cookie'));
         }
 
-        // RECOVER PASSWD
+        // ------------------ RECOVER PASSWD ----------------------
 
         function send_recover_email() {
             // echo json_encode('dentro de recover email');
@@ -72,5 +72,13 @@
             // echo json_encode('dentro de new password');
             echo json_encode(common::load_model('login_model', 'get_new_password', [$_POST['token_email'],$_POST['passwd']]));
         }
+
+        // ------------------ SOCIAL LOGIN ------------------------
+
+        function social_login() {
+            // echo json_encode($_POST['user']);
+            echo json_encode(common::load_model('login_model', 'get_social_login', $_POST['user']));
+        }
+
     }
 ?>

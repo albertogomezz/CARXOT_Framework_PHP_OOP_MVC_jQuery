@@ -31,13 +31,13 @@
             return $this -> bll -> get_logout_BLL();
         }
 
-        // VERIFY EMAIL
+        // ---------------- VERIFY EMAIL ---------------------
 
         public function get_verify_email($args) {
             return $this -> bll -> get_verify_email_BLL($args);
         }
 
-        // ACTIVITY USER
+        // ---------------  ACTIVITY USER ----------------------
 
         public function get_activity() {
             return $this -> bll -> get_activity_BLL();
@@ -55,7 +55,7 @@
             return $this -> bll -> get_refresh_cookie_BLL();
         }
 
-        // RECOVER PASSWD
+        // ------------------ RECOVER PASSWD ----------------------
 
         public function get_send_recover_email($args) {
             return $this -> bll -> get_send_recover_email_BLL($args);
@@ -67,6 +67,12 @@
 
         public function get_new_password($args) {
             return $this -> bll -> get_new_password_BLL($args);
+        }
+
+        // ------------------ SOCIAL LOGIN ------------------------
+
+        public function get_social_login($args) {
+            return $this -> bll -> get_social_login_BLL($args);
         }
     }
 ?>

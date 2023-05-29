@@ -14,7 +14,7 @@
 
         public function select_email($db, $email) {
 
-			$sql = "SELECT email FROM users WHERE email='$email'";
+			$sql = "SELECT email FROM users WHERE email='$email' AND uid = '';";
 
             $stmt = $db -> ejecutar($sql);
             return $db -> listar($stmt);
@@ -35,6 +35,14 @@
             $stmt = $db -> ejecutar($sql);
             return $db -> listar($stmt);
 
+        }
+
+        public function select_uid($db, $uid){
+
+			$sql = "SELECT id, username, password, email, user_type, avatar, token_email, activate FROM users WHERE uid = '$uid'";
+
+            $stmt = $db->ejecutar($sql);
+            return $db->listar($stmt);
         }
 
         function select_data_user($db, $username){
@@ -84,6 +92,25 @@
 
             $stmt = $db->ejecutar($sql);
             return "ok";
+        }
+
+        // SOCIAL LOGIN
+
+        public function select_social_login($db, $id){
+
+			$sql = "SELECT * FROM users WHERE uid='$id'";
+
+            $stmt = $db->ejecutar($sql);
+            return $db->listar($stmt);
+        }
+
+        public function insert_social_login($db, $id, $username, $email, $avatar){
+
+            $sql ="INSERT INTO users (username, password, email, type_user, avatar, token_email, activate, uid)     
+                VALUES ('$username', '', '$email', 'client', '$avatar', '', 1, '$id')";
+
+            // return $sql;
+            return $stmt = $db->ejecutar($sql);
         }
 
     }

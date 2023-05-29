@@ -90,7 +90,7 @@
 			return 'done';
 		}
 
-		// VERIFY USER
+        // ---------------- VERIFY EMAIL ---------------------
 
 		public function get_verify_email_BLL($args) {
 
@@ -105,7 +105,7 @@
 			return 'error';
 		}
 
-		// ACTIVITY USER
+        // ---------------  ACTIVITY USER ----------------------
 
 		public function get_activity_BLL() {
 
@@ -148,7 +148,7 @@
 			return 'refresh';
 		}
 
-		// RECOVER PASSWORD
+        // ------------------ RECOVER PASSWD ----------------------
 		
 		public function get_send_recover_email_BLL($args) {
 			// return $args;
@@ -188,6 +188,34 @@
 				return 'done';
 			}
 			return 'fail';
+		}
+
+		// ------------------ SOCIAL LOGIN ------------------------
+
+		public function get_social_login_BLL($args) {
+
+			// return $args;
+
+			$rdo = $this -> dao -> select_social_login($this->db, $args['uid']);
+
+			// return $rdo;
+
+			if (!empty($rdo)) {
+
+				$token= create_token($rdo[0]["username"]);
+				return $token;
+            }
+			
+			else {
+
+				// return 'dentro de else';
+
+				$this -> dao -> insert_social_login($this->db, $args['uid'], $args['username'], $args['email'], $args['avatar']);
+
+				$user = $this -> dao -> select_social_login($this->db, $args['uid']);
+				$token= create_token($user[0]["username"]);
+				return $token;
+			}
 		}
 	}
 ?>

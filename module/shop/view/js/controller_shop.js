@@ -112,6 +112,9 @@ function clicks() {
 }
 
 function loadDetails(id_car) {
+
+    id_coche = JSON.parse(localStorage.getItem('id_car'));
+
     ajaxPromise(friendlyURL('?module=shop&op=details_car') , 'POST', 'JSON' , { 'id_car': id_car})
     .then(function(data) {
         
@@ -189,17 +192,11 @@ function loadDetails(id_car) {
             }
         });
 
-        id_coche = JSON.parse(localStorage.getItem('id_car'));
-
-        // console.log(id_coche);
-        if (id_coche) {    
+        if (id_coche) {
             click_like(id_coche);
-            // console.log(id_coche);
-            // location.reload();
+            localStorage.removeItem('id_car');
         }
         load_likes_user();  
-        localStorage.removeItem('id_car');
-
     }).catch(function() {
         // window.location.href = "index.php?module=ctrl_exceptions&op=503&type=503&lugar=Load_Details SHOP";
     });

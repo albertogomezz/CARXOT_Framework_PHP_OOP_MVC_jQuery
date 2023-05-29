@@ -56,4 +56,8 @@
         <name>refresh_cookie</name>
         <uri>refresh_cookie</uri>
     </function>
+    <function>
+        <name>social_login</name>
+        <uri>social_login</uri>
+    </function>
 </functions>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-05-2023 a las 19:18:17
+-- Tiempo de generación: 30-05-2023 a las 19:39:50
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -102,16 +102,16 @@ CREATE TABLE `car` (
 --
 
 INSERT INTO `car` (`id_car`, `vin_num`, `num_plate`, `model`, `bodywork`, `Km`, `color`, `num_doors`, `motor`, `matriculation_date`, `price`, `img_car`, `lat`, `lon`, `city`, `count`, `stock`) VALUES
-(1, '123456789', '1234ERT', '1', '4', 0, 'Negro', '5', 'G', '12/03/2015', 15000, 'view/img/CMAX/CMAX.1.jpg', '38.82367390980723', '-0.601181851177484', 'Ontinyent', 11, 10),
-(2, '213456789', '1234DFG', '2', '5', 0, 'Azul', '5', 'G', '24/08/2017', 16000, 'view/img/Q5/Q5.1.jpg', '38.825525628248116', '-0.5997350817087959', 'Ontinyent', 56, 10),
-(3, '312456789', '1234CVB', '3', '1', 10000, 'Negro', '5', 'D', '12/03/2015', 17000, 'view/img/FOCUS/FOCUS.1.jpg', '38.82166111774936', '-0.6136860730140034', 'Ontinyent', 10, 10),
-(4, '193453789', '5555JPN', '4', '1', 34000, 'Blanco', '5', 'H', '23/05/2019', 25000, 'view/img/YARIS/YARIS.1.jpg', '38.818701985288875', '-0.6030137238136771', 'Ontinyent', 59, 10),
-(5, '123946789', '8888UWU', '5', '1', 20000, 'Gris', '5', 'D', '12/03/2015', 19000, 'view/img/CLASE_A/CLASE_A.1.jpg', '38.82370911425378', '-0.5983900799962639', 'Ontinyent', 5, 10),
-(6, '223466799', '7495LOL', '6', '3', 5000, 'Negro', '3', 'H', '12/03/2015', 69000, 'view/img/I8/I8.1.jpg', '38.82330756698975', '-0.6040710613129716', 'Ontinyent', 9, 10),
-(7, '1W2D50JIL04J3L5K1', '4567DAB', '7', '3', 200000, 'Negro', '5', 'G', '15/04/2019', 50000, 'view/img/I4/I4.1.jpg', '38.8232769', '-0.600155', 'Ontinyent', 8, 10),
-(8, '1W2D50JIL04J3L7R2', '7368THF', '8', '3', 0, 'Azul', '5', 'G', '30/03/2019', 60000, 'view/img/MUSTANG/MUSTANG.1.jpg', '38.82421587514509', '-0.6005771635021804', 'Ontinyent', 131, 10),
-(9, '1W2D50JIL04J3L3P4', '3248WPL', '9', '5', 100000, 'Red', '5', 'G', '25/02/2019', 30000, 'view/img/A6/A6.1.jpg', '38.818685597301496', '-0.6110650426489811', 'Ontinyent', 147, 9),
-(10, '89023452', '5499IFR', '10', '3', 0, 'Blanco', '2', 'G', '23/08/2020', 124000, 'view/img/R8/R8.1.jpg', '38.82121664147923', '-0.6092072861892415', 'Ontinyent', 121, 10);
+(1, '123456789', '1234ERT', '1', '4', 0, 'Negro', '5', 'G', '12/03/2015', 15000, 'view/img/CMAX/CMAX.1.jpg', '38.82367390980723', '-0.601181851177484', 'Ontinyent', 12, 10),
+(2, '213456789', '1234DFG', '2', '5', 0, 'Azul', '5', 'G', '24/08/2017', 16000, 'view/img/Q5/Q5.1.jpg', '38.825525628248116', '-0.5997350817087959', 'Ontinyent', 58, 10),
+(3, '312456789', '1234CVB', '3', '1', 10000, 'Negro', '5', 'D', '12/03/2015', 17000, 'view/img/FOCUS/FOCUS.1.jpg', '38.82166111774936', '-0.6136860730140034', 'Ontinyent', 15, 10),
+(4, '193453789', '5555JPN', '4', '1', 34000, 'Blanco', '5', 'H', '23/05/2019', 25000, 'view/img/YARIS/YARIS.1.jpg', '38.818701985288875', '-0.6030137238136771', 'Ontinyent', 63, 10),
+(5, '123946789', '8888UWU', '5', '1', 20000, 'Gris', '5', 'D', '12/03/2015', 19000, 'view/img/CLASE_A/CLASE_A.1.jpg', '38.82370911425378', '-0.5983900799962639', 'Ontinyent', 8, 10),
+(6, '223466799', '7495LOL', '6', '3', 5000, 'Negro', '3', 'H', '12/03/2015', 69000, 'view/img/I8/I8.1.jpg', '38.82330756698975', '-0.6040710613129716', 'Ontinyent', 12, 10),
+(7, '1W2D50JIL04J3L5K1', '4567DAB', '7', '3', 200000, 'Negro', '5', 'G', '15/04/2019', 50000, 'view/img/I4/I4.1.jpg', '38.8232769', '-0.600155', 'Ontinyent', 13, 10),
+(8, '1W2D50JIL04J3L7R2', '7368THF', '8', '3', 0, 'Azul', '5', 'G', '30/03/2019', 60000, 'view/img/MUSTANG/MUSTANG.1.jpg', '38.82421587514509', '-0.6005771635021804', 'Ontinyent', 144, 10),
+(9, '1W2D50JIL04J3L3P4', '3248WPL', '9', '5', 100000, 'Red', '5', 'G', '25/02/2019', 30000, 'view/img/A6/A6.1.jpg', '38.818685597301496', '-0.6110650426489811', 'Ontinyent', 275, 9),
+(10, '89023452', '5499IFR', '10', '3', 0, 'Blanco', '2', 'G', '23/08/2020', 124000, 'view/img/R8/R8.1.jpg', '38.82121664147923', '-0.6092072861892415', 'Ontinyent', 135, 10);
 
 -- --------------------------------------------------------
 
@@ -188,9 +188,10 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`id_cart`, `id_user`, `id_car`, `qty`) VALUES
-(82, 40, 9, 2),
-(83, 40, 8, 2),
-(84, 40, 10, 1);
+(130, 53, 9, 3),
+(131, 53, 8, 3),
+(132, 53, 10, 1),
+(145, 82, 8, 6);
 
 --
 -- Disparadores `cart`
@@ -205,6 +206,7 @@ CREATE TRIGGER `No_Superar_Stock_Maximo` AFTER UPDATE ON `cart` FOR EACH ROW BEG
 END
 $$
 DELIMITER ;
+
 DELIMITER $$
 CREATE TRIGGER `cambiar_0_A_1_QTY` AFTER UPDATE ON `cart` FOR EACH ROW BEGIN
         IF new.qty < 1 THEN
@@ -217,6 +219,17 @@ DELIMITER ;
 -- --------------------------------------------------------
 
 --
+-- Estructura Stand-in para la vista `coches_ford`
+-- (Véase abajo para la vista actual)
+--
+CREATE TABLE `coches_ford` (
+`num_plate` varchar(8)
+,`name_model` varchar(25)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `likes`
 --
 
@@ -225,22 +238,6 @@ CREATE TABLE `likes` (
   `id_user` int(30) NOT NULL,
   `id_car` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Volcado de datos para la tabla `likes`
---
-
-INSERT INTO `likes` (`id_like`, `id_user`, `id_car`) VALUES
-(94, 41, 2),
-(95, 41, 4),
-(96, 41, 9),
-(97, 41, 8),
-(98, 41, 10),
-(100, 41, 1),
-(122, 40, 6),
-(125, 40, 1),
-(126, 43, 9),
-(127, 43, 8);
 
 -- --------------------------------------------------------
 
@@ -286,6 +283,25 @@ CREATE TABLE `pedidos` (
   `fecha` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_spanish2_ci;
 
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`cod_pedido`, `id_user`, `id_car`, `cantidad`, `precio`, `precio_total`, `fecha`) VALUES
+(116, 53, 9, 1, 30000, 30000, '2023-05-22'),
+(117, 53, 9, 1, 30000, 30000, '2023-05-22'),
+(118, 64, 9, 1, 30000, 30000, '2023-05-23'),
+(119, 64, 8, 2, 60000, 120000, '2023-05-23'),
+(120, 68, 9, 1, 30000, 30000, '2023-05-25'),
+(121, 68, 8, 1, 60000, 60000, '2023-05-25'),
+(122, 68, 9, 1, 30000, 30000, '2023-05-25'),
+(123, 68, 8, 1, 60000, 60000, '2023-05-25'),
+(124, 79, 9, 1, 30000, 30000, '2023-05-30'),
+(125, 79, 9, 1, 30000, 30000, '2023-05-30'),
+(126, 79, 8, 1, 60000, 60000, '2023-05-30'),
+(127, 79, 9, 1, 30000, 30000, '2023-05-30'),
+(128, 79, 8, 1, 60000, 60000, '2023-05-30');
+
 -- --------------------------------------------------------
 
 --
@@ -316,21 +332,32 @@ INSERT INTO `type_motor` (`cod_tmotor`, `name_tmotor`, `img_tmotor`) VALUES
 
 CREATE TABLE `users` (
   `id_user` int(30) NOT NULL,
-  `username` varchar(25) DEFAULT NULL,
+  `username` varchar(30) NOT NULL,
   `password` varchar(100) DEFAULT NULL,
-  `email` varchar(50) DEFAULT NULL,
+  `email` varchar(50) NOT NULL,
   `type_user` varchar(50) DEFAULT NULL,
-  `avatar` varchar(100) DEFAULT NULL
+  `avatar` varchar(100) DEFAULT NULL,
+  `token_email` varchar(250) NOT NULL,
+  `activate` int(11) NOT NULL,
+  `uid` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id_user`, `username`, `password`, `email`, `type_user`, `avatar`) VALUES
-(40, 'Alberto', '$2y$12$wNx/1MYuY1TdvsCNn9GZW.Z3tu7clqQzJ70a62HHON2WHAIFIwpPu', 'albertogomez@gmail.com', 'client', 'https://i.pravatar.cc/500?u=8fc781402474f1957a038c61443ae1b3'),
-(41, 'Joan', '$2y$12$E/QaieBuXyN3hMuVzjfh6.T5f/ml32683wWeVzxwvyh6bNX/rTKYS', 'joan@gmail.com', 'client', 'https://i.pravatar.cc/500?u=0368cc988a37f13f16420daa9f746e7b'),
-(43, 'Pablo', '$2y$12$y64IF6rpuNnI6UoLpTmNBe6nubDmgYsSQOswfIpl6xXLatUPLguI6', 'pablo@gmail.com', 'client', 'https://i.pravatar.cc/500?u=71182af69ae34c8d431aca417bdc5694');
+INSERT INTO `users` (`id_user`, `username`, `password`, `email`, `type_user`, `avatar`, `token_email`, `activate`, `uid`) VALUES
+(82, 'joan', '$2y$12$QnozElIgcF5dLArw8mGcVupoL4Z6wG/8wn1qbieBULl8gbpWasD7K', 'albertogom.alon@gmail.com', 'client', 'https://robohash.org/b4768ee262f572a94896f493ec525519', '', 1, ''),
+(85, 'albertogom.alon', '', 'albertogom.alon@gmail.com', 'client', 'https://lh3.googleusercontent.com/a/AAcHTtcf1SOq4gE09qjWHpszMWjK-KjGtn_r_QFPn1Hf=s96-c', '', 1, 'keCfDWis89WejEktkIUf21Rwoik1');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura para la vista `coches_ford`
+--
+DROP TABLE IF EXISTS `coches_ford`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `coches_ford`  AS SELECT `c`.`num_plate` AS `num_plate`, `m`.`name_model` AS `name_model` FROM ((`car` `c` join `model` `m`) join `brand` `b`) WHERE `c`.`model` = `m`.`id_model` AND `m`.`brand` = `b`.`id_brand` AND `b`.`name_brand` = 'Ford''Ford'  ;
 
 --
 -- Índices para tablas volcadas
@@ -402,9 +429,7 @@ ALTER TABLE `type_motor`
 -- Indices de la tabla `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id_user`),
-  ADD UNIQUE KEY `username` (`username`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD PRIMARY KEY (`id_user`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -414,25 +439,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id_cart` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=85;
+  MODIFY `id_cart` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=146;
 
 --
 -- AUTO_INCREMENT de la tabla `likes`
 --
 ALTER TABLE `likes`
-  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
+  MODIFY `id_like` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=201;
 
 --
 -- AUTO_INCREMENT de la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `cod_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `cod_pedido` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_user` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=86;
 
 --
 -- Restricciones para tablas volcadas

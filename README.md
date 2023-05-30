@@ -1,4 +1,4 @@
-<h1 align="center">CAR-XOT</h1>
+<h1 align="center">🚗 CAR-XOT 🚗</h1>
 <hr style="height: 2px; color:white;">
 <h2 id="index"> <u>INTRODUCCIÓN</u></h2>
 <div style="margin-left: 35px;">

@@ -6,7 +6,7 @@
             href="https://github.com/albertogomezz/CARXOT_Framework_PHP_OOP_MVC_jQuery"><b
                 style="color:blue;"> CAR-XOT</b>?</a></h4>
     <p style="margin-top: -10px;">Es una aplicación web donde puedes comprar coches, además de geolocalizar y loguearte con tu gmail o github, 
-        añadir los coches que te gusten a favoritos y poder añadir al carrito para posteriormente hacer pedidos</p>
+        añadir los coches que te gusten a favoritos y poder añadirlos al carrito para posteriormente hacer pedidos</p>
 </div>
 <hr>
 <h2 id="index">🟡 <u>INDEX</u> 🟡</h2>
@@ -34,7 +34,7 @@
     <h3 id="menu" style="font-family: serif;"><b>◼ MENÚ:</b></h3>
         <div>
             <ul>
-                <li>En el menu de <b style="color:blue;">CAR-XOT</b> puedes encontrar diferentes modulos que tenemos en la página como:</li> 
+                <li>En el menú de <b style="color:blue;">CAR-XOT</b> puedes encontrar diferentes módulos que tenemos en la aplicación, como por ejemplo:</li> 
                 <ul>
                     <li>HOME</li>
                     <li>SHOP</li>
@@ -52,7 +52,7 @@
             </tr>
             <tr>
                 <td style="color: orange;"><b>HOME:</b></td> 
-                <td>En este módulo podemos ver un carrusel con las marcas, un menú con las diferentes carrocerías y otro menú con los diferentes tipos  de motor de los coches como (eléctricos, híbridos...). También en la parte inferior del módulo de inicio podemos encontrar algunos libros relacionados con todas las ventajas de los coches eléctricos</td>
+                <td>En este módulo podemos ver un carrusel con las marcas, un menú con las diferentes carrocerías y otro menú con los diferentes tipos  de motor de los coches como (eléctricos, híbridos...). También en la parte inferior del módulo de inicio podemos encontrar algunos libros relacionados con todas las ventajas de los coches eléctricos.</td>
             </tr>
             <tr>
                 <td style="color: orange;"><b>SHOP:</b></td> 
@@ -60,11 +60,11 @@
             </tr>
             <tr>
                 <td style="color: orange;"><b>SEARCH:</b></td> 
-                <td>En este módulo puedes encontrar un filtro donde puedes buscar por tipo de coche , dependiendo de la marca puedes seleccionar diferentes modelos asociados a esa marca y la ciudad donde quieres buscarlo</td>
+                <td>En este módulo puedes encontrar un filtro donde puedes buscar por tipo de coche , dependiendo de la marca puedes seleccionar diferentes modelos asociados a esa marca y la ciudad donde quieres buscarlo.</td>
             </tr>
             <tr>
                 <td style="color: orange;"><b>LOGIN:</b></td> 
-                <td>En este módulo puedes encontrar todo lo relacionado con el log in, puedes registrarte con las credenciales de la página. Por otro lado puedes iniciar sesión con un usuario registrado en la página o con tu cuenta de gmail o gitgub. También puedes cambiar tu contraseña o cambiar la contraseña en caso de que no te acuerdes enviando un email a tu correo. Por último, otra característica de este módulo es enviar un email de verificación cada vez que realices una acción en tu cuenta, por ejemplo (registro, cambio de contraseña...)</td>
+                <td>En este módulo puedes encontrar todo lo relacionado con el log in, puedes registrarte con las credenciales de la página. Por otro lado puedes iniciar sesión con un usuario registrado en la página o con tu cuenta de gmail o gitgub. También puedes cambiar tu contraseña o cambiar la contraseña en caso de que no te acuerdes enviando un email a tu correo. Por último, otra característica de este módulo es enviar un email de verificación cada vez que realices una acción en tu cuenta, por ejemplo (registro, cambio de contraseña...).</td>
             </tr>
             <tr>
                 <td style="color: orange;"><b>CONTACT:</b></td> 
@@ -72,7 +72,7 @@
             </tr>
             <tr>
                 <td style="color: orange;"><b>CART:</b></td> 
-                <td>En este módulo es donde se realizarán los pedidos de los coches añadidos anteriormente desde el módulo de SHOP.Una funcionalidad del módulo de CART es poder aumentar y disminuir la cantidad de los productos por separado y eliminarlos del carrito</td>
+                <td>En este módulo es donde se realizarán los pedidos de los coches añadidos anteriormente desde el módulo de SHOP.Una funcionalidad del módulo de CART es poder aumentar y disminuir la cantidad de los productos por separado y eliminarlos del carrito.</td>
             </tr>
         </table>
     </div>

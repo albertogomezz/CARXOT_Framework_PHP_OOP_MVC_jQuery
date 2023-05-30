@@ -5,8 +5,8 @@
     <h4>Que es <a style="text-decoration: none; color:black"
             href="https://github.com/albertogomezz/CARXOT_Framework_PHP_OOP_MVC_jQuery"><b
                 style="color:blue;"> CAR-XOT</b>?</a></h4>
-    <p style="margin-top: -10px;">Es una pagina web en donde puedes comprar coches, además de geolocalizar y loguearte con tu gmail o github, 
-        añadir los coches que te gusten a favoritos y pronto añadiremos la funcionalidad del carrito</p>
+    <p style="margin-top: -10px;">Es una aplicación web donde puedes comprar coches, además de geolocalizar y loguearte con tu gmail o github, 
+        añadir los coches que te gusten a favoritos y poder añadir al carrito para posteriormente hacer pedidos</p>
 </div>
 <hr>
 <h2 id="index">🟡 <u>INDEX</u> 🟡</h2>
@@ -19,7 +19,7 @@
         <li style="margin-bottom: 4px;"><b><a style="text-decoration: none; color:black" href="#index">CONTENIDO</a></b>
         </li>
         <ul>
-            <li><b><a style="text-decoration: none; color:black" href="#menu">Menu</a></b></li>
+            <li><b><a style="text-decoration: none; color:black" href="#menu">Menú</a></b></li>
             <li><b><a style="text-decoration: none; color:black" href="#modules">Módulos</a></b></li>
         </ul>
         <li style="margin-bottom: 4px;"><b><a style="text-decoration: none; color:black"
@@ -31,10 +31,10 @@
 <hr>
 <h2 id="index">🟡 <u>CONTENIDO</u> 🟡</h2>
 <div style="margin-left: 35px;">
-    <h3 id="menu" style="font-family: serif;"><b>◼ MENU:</b></h3>
+    <h3 id="menu" style="font-family: serif;"><b>◼ MENÚ:</b></h3>
         <div>
             <ul>
-                <li>En el menu de <b style="color:blue;">CAR-XOT</b> puedes encontrar diferentes modulos que tenemos en la página como:you can find the different modules or sections that we have on the page, such as:</li> 
+                <li>En el menu de <b style="color:blue;">CAR-XOT</b> puedes encontrar diferentes modulos que tenemos en la página como:</li> 
                 <ul>
                     <li>HOME</li>
                     <li>SHOP</li>

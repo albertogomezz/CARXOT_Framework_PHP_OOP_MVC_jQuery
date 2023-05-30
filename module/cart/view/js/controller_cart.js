@@ -144,12 +144,12 @@ function checkout(){
                 if (data == 'error'){
                     toastr.warning("Tu carrito está vacio");
                 } else {
-                    toastr.success("Pedido Realizado");                
+                    toastr.success("Pedido Realizado");
+                    setTimeout("window.location.href = friendlyURL('?module=shop')", 3000);                
                 }
             }).catch(function() {
                 window.location.href = 'index.php?page=error533'
             });
-            setTimeout('window.location.href = "?module=shop";', 2000);
         });
 }
 

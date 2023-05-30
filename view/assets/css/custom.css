@@ -982,7 +982,7 @@ text-align: center;
   width: 60px;
   border-style: none;
   border-radius: 0px;
-  background-image: url(../images/google.png);
+  background-image: url(img/google.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1003,7 +1003,7 @@ text-align: center;
   display: inline-block;
   height: 60px;
   width: 60px;
-  background-image: url(../images/github.png);
+  background-image: url(img/github.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

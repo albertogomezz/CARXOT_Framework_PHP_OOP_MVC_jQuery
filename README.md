@@ -52,7 +52,7 @@
             </tr>
             <tr>
                 <td style="color: orange;"><b>HOME:</b></td> 
-                <td>En este módulo podemos ver un carrusel con las marcas, un menú con las diferentes carrocerías y otro menú con los diferentes tipos  de motor de los coches como (eléctricos, híbridos...). También en la parte inferior del módulo de inicio podemos encontrar algunos libros relacionados con todas las ventajas de los coches eléctricos.</td>
+                <td>En este módulo podemos ver un <b>carrusel con las marcas</b>, un menú con las diferentes carrocerías y otro menú con los diferentes tipos  de motor de los coches como (eléctricos, híbridos...). También en la parte inferior del módulo de inicio podemos encontrar algunos libros relacionados con todas las ventajas de los coches eléctricos.</td>
             </tr>
             <tr>
                 <td style="color: orange;"><b>SHOP:</b></td> 

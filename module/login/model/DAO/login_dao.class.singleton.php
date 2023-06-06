@@ -65,7 +65,6 @@
         public function update_verify_email($db, $token_email){
 
             $sql = "UPDATE users SET activate = 1, token_email= '' WHERE token_email = '$token_email'";
-
             $stmt = $db->ejecutar($sql);
         }
 
@@ -112,6 +111,5 @@
             // return $sql;
             return $stmt = $db->ejecutar($sql);
         }
-
     }
 ?>

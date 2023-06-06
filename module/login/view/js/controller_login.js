@@ -180,7 +180,7 @@ function load_form_new_password(){
             // console.log(data);
             if(data == "verify"){
                 console.log('verified');
-                click_new_password(token_email); 
+                click_new_password(token_email);
             }else {
                 console.log("error");
             }

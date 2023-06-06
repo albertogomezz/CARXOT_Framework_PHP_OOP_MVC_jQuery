@@ -62,8 +62,8 @@ function logout_auto() {
 }
 
 $(document).ready(function() {
-    // control_activity();
-    // protecturl();
+    control_activity();
+    protecturl();
     setInterval(function() { refresh_token() }, 600000);
     setInterval(function() { refresh_cookie() }, 600000);
 });
